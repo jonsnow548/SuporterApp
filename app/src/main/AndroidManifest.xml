@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SuporterApp"
+        tools:targetApi="31">
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".login.RegisterActivity"></activity>
+        <activity android:name=".EditProfilActivity"></activity>
+
+        <activity android:name=".shop.CartActivity"></activity>
+        <activity android:name=".shop.CheckoutActivity"></activity>
+        <activity android:name=".shop.ShopActivity"></activity>
+        <activity android:name=".administrator.AdministratorActivity"></activity>
+        <activity android:name=".administrator.ViewOrdersActivity"></activity>
+        <activity android:name=".antrenament.AntrenamentActivity"></activity>
+        <activity android:name=".games.GamesActivity"></activity>
+        <activity android:name=".games.QuizActivity"></activity>
+        <activity android:name=".games.AddQuestionActivity"></activity>
+        <activity android:name=".games.PredictorActivity"></activity>
+        <activity android:name=".jucator.JucatorActivity"></activity>
+        <activity android:name=".jucator.ChatActivity"></activity>
+        <activity android:name=".news.NewsActivity"></activity>
+        <activity android:name=".news.AddNewsActivity"></activity>
+        <activity android:name=".AntrenorActivity"></activity>
+        <activity android:name=".CalendarActivity"></activity>
+        <activity android:name=".lot_echipa.TeamRosterActivity"></activity>
+        <activity android:name=".BaseActivity"></activity>
+        <activity android:name=".login.ResetPasswordActivity"></activity>
+        <activity android:name=".shop.AddItemsActivity"></activity>
+        <activity android:name=".administrator.ComenziLivrateActivity"></activity>
+        <activity android:name=".administrator.ComenziTrimiseActivity"></activity>
+        <activity android:name=".lot_echipa.AddPlayersActivity"></activity>
+        <activity android:name=".lot_echipa.TeamRosterActivity"></activity>
+
+
+
+
+        <activity
+            android:name=".login.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

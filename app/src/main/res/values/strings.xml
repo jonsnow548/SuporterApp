@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Licenta_aplicatie</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_age">Age</string>
+    <string name="hint_profile_type">Profile Type</string>
+    <string name="hint_register">Register</string>
+    <string name="action_register">Register</string>
+    <string name="hint_login">Login</string>
+    <string name="action_login">Login</string>
+    <string name="hint_team_name">Team Name</string>
+    <string name="hint_team_city">Team City</string>
+    <string name="back_button_description">Înapoi</string>
+    <string name="add_button_description">Add</string>
+    <string name="title_hint">Title</string>
+    <string name="content_hint">Content</string>
+    <string name="image_url_hint">Image URL</string>
+    <string name="date_hint">Date (dd-MM-yyyy)</string>
+    <string name="save_news_button">Save News</string>
+    <string name="add_news_button">Add News</string>
+    <string name="select_image">Select Image</string>
+    <string name="image_preview">Image Preview</string>
+    <string name="news_image">News Image</string>
+    <string name="no_news_available">No news available</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="profile_image_description">Imaginea de profil</string>
+    <string name="change_image">Schimbă Imaginea</string>
+    <string name="name">Nume</string>
+    <string name="age">Vârstă</string>
+    <string name="current_password">Parola Actuală</string>
+    <string name="update">Actualizează</string>
+    <string name="mark_as_delivered">Marchează ca Livrată</string>
+    <string name="mark_as_sent">Marchează ca Trimisă</string>
+    <string name="total_format">Total: $%1$.2f</string>
+    <string-array name="user_types">
+        <item>ADMINISTRATOR</item>
+        <item>ANTRENOR</item>
+        <item>JUCĂTOR</item>
+        <item>FAN</item>
+    </string-array>
+</resources>

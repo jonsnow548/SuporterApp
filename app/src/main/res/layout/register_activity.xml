@@ -1,0 +1,66 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_gradient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/registerEmailEditText"
+        style="@style/CustomEditTextStyle"
+        android:layout_marginTop="32dp"
+        android:hint="@string/hint_email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/registerPasswordEditText"
+        style="@style/CustomEditTextStyle"
+        android:layout_marginTop="16dp"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/registerEmailEditText" />
+
+    <EditText
+        android:id="@+id/nameEditText"
+        style="@style/CustomEditTextStyle"
+        android:layout_marginTop="16dp"
+        android:hint="@string/hint_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/registerPasswordEditText" />
+
+    <EditText
+        android:id="@+id/ageEditText"
+        style="@style/CustomEditTextStyle"
+        android:layout_marginTop="16dp"
+        android:hint="@string/hint_age"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameEditText" />
+
+    <Spinner
+        android:id="@+id/userTypeSpinner"
+        style="@style/CustomSpinnerStyle"
+        android:layout_marginTop="16dp"
+        android:entries="@array/user_types"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ageEditText" />
+
+    <Button
+        android:id="@+id/registerButton"
+        style="@style/CustomButtonStyle"
+        android:layout_marginTop="24dp"
+        android:text=" ÎNREGISTRARE"
+        android:background="#0000FF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/userTypeSpinner" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

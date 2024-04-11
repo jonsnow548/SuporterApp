@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Logo-ul aplicației -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/myimage2"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Elemente de meniu pentru navigare -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Acasă"
+        android:padding="8dp"
+        android:drawableLeft="@drawable/baseline_home_24"
+        android:clickable="true"
+        android:onClick="openHome"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Profil"
+        android:padding="8dp"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:clickable="true"
+        android:onClick="openProfile"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Setări"
+        android:padding="8dp"
+        android:drawableLeft="@drawable/baseline_settings_24"
+        android:clickable="true"
+        android:onClick="openSettings"/>
+
+    <!-- Separator -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <!-- Buton pentru a reveni în activitatea principală -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Înapoi la Acasă"
+        android:layout_gravity="center_horizontal"
+        android:onClick="goBackToHome"/>
+
+</LinearLayout>

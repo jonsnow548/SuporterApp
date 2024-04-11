@@ -1,0 +1,14 @@
+<resources>
+    <string-array name="positions_array">
+        <item>GK</item> <!-- Goalkeeper -->
+        <item>RB</item> <!-- Right Back -->
+        <item>CB</item> <!-- Center Back -->
+        <item>LB</item> <!-- Left Back -->
+        <item>CDM</item> <!-- Central Defensive Midfielder -->
+        <item>CM</item> <!-- Center Midfielder -->
+        <item>CAM</item> <!-- Central Attacking Midfielder -->
+        <item>RW</item> <!-- Right Wing -->
+        <item>LW</item> <!-- Left Wing -->
+        <item>ST</item> <!-- Striker -->
+    </string-array>
+</resources>

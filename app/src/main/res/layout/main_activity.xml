@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+   android:background="@drawable/bg_gradient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/btnEditProfile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#FF0000"
+
+        android:drawablePadding="20dp"
+        android:elevation="4dp"
+        android:text="Editare Profil"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnTeamRoster"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Lot Echipă"
+        android:backgroundTint="#FF0000"
+        android:textColor="@color/white"
+        android:elevation="4dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/btnEditProfile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cornerRadius="20dp"/>
+
+    <Button
+        android:id="@+id/btnTeamCalendar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Calendar Echipă"
+        android:backgroundTint="#FF0000"
+        android:textColor="#FFFFFF"
+        android:elevation="4dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/btnTeamRoster"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cornerRadius="20dp"/>
+
+    <Button
+        android:id="@+id/btnNews"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Știri"
+        android:backgroundTint="#FF0000"
+        android:textColor="@color/white"
+        android:elevation="4dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/btnTeamCalendar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cornerRadius="20dp"/>
+
+    <Button
+        android:id="@+id/btnShop"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Magazin"
+        android:backgroundTint="#FF0000"
+        android:textColor="#FFFFFF"
+        android:elevation="4dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/btnNews"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cornerRadius="20dp"/>
+
+    <Button
+        android:id="@+id/btnSendEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Trimite Email"
+        android:backgroundTint="#FF0000"
+        android:textColor="#FFFFFF"
+        android:elevation="4dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/btnShop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cornerRadius="20dp"/>
+
+    <ImageView
+        android:id="@+id/imageViewProfile"
+        android:layout_width="500dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/logo_main1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSendEmail"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/btnAdministrator"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Funcționalitate Administrator"
+        android:backgroundTint="#2196F3"
+        android:textColor="#FFFFFF"
+        android:elevation="4dp"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/btnGames"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cornerRadius="20dp"/>
+
+    <Button
+        android:id="@+id/btnJucator"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Funcționalitate Jucător"
+        android:backgroundTint="#2196F3"
+        android:textColor="#FFFFFF"
+        android:elevation="4dp"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/btnAdministrator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cornerRadius="20dp"/>
+
+    <Button
+        android:id="@+id/btnAntrenor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Funcționalitate Antrenor"
+        android:backgroundTint="#2196F3"
+        android:textColor="#FFFFFF"
+        android:elevation="4dp"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/btnJucator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cornerRadius="20dp"/>
+
+    <!-- New Button: Jocuri -->
+    <Button
+        android:id="@+id/btnGames"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Jocuri"
+        android:backgroundTint="#FF0000"
+        android:textColor="#FFFFFF"
+        android:elevation="4dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/btnSendEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cornerRadius="20dp"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

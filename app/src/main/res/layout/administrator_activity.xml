@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/bg_gradient"
+    tools:context=".administrator.AdministratorActivity">
+
+    <Button
+        android:id="@+id/btnViewSponsors"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Vizualizează Sponsorii"
+        android:backgroundTint="#FF0000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        android:elevation="4dp"/>
+
+    <Button
+        android:id="@+id/btnViewBudget"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Vizualizează Bugetul"
+        android:backgroundTint="#FF0000"
+        app:layout_constraintTop_toBottomOf="@id/btnViewSponsors"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:elevation="4dp"/>
+
+    <Button
+        android:id="@+id/btnViewExpenses"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Vizualizează Cheltuielile"
+        app:layout_constraintTop_toBottomOf="@id/btnViewBudget"
+        android:backgroundTint="#FF0000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:elevation="4dp"/>
+
+    <Button
+        android:id="@+id/btncreateplayer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:elevation="4dp"
+        android:text="Creează un cont"
+        android:backgroundTint="#FF0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnViewExpenses" />
+
+    <Button
+        android:id="@+id/addnewsbtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:elevation="4dp"
+        android:backgroundTint="#FF0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Adaugă știri"
+        app:layout_constraintTop_toBottomOf="@+id/btncreateplayer" />
+
+    <Button
+        android:id="@+id/addQuestionButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Adaugă Întrebare in Quiz"
+        android:backgroundTint="#FF0000"
+        app:layout_constraintTop_toBottomOf="@+id/addnewsbtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:elevation="4dp"/>
+    <Button
+        android:id="@+id/btnViewOrders"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:elevation="4dp"
+        android:text="Vizualizează Comenzi"
+        android:backgroundTint="#FF0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addQuestionButton" />
+    <Button
+        android:id="@+id/AdaugaJucator"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:elevation="4dp"
+        android:text="Adauga Jucator"
+        android:backgroundTint="#FF0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnViewOrders" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

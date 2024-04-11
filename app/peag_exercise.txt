@@ -1,0 +1,65 @@
+import numpy
+from math import sin, cos
+
+# individul are 9 gene pe binar
+
+def transformareBinarZecimal(x):
+    n=len(x)
+    suma=0
+    for i in range(n):
+        suma=suma+ pow(2,i)* x[n-i-1]
+    return suma
+
+def f_obiectiv(x):
+    f = pow(sin(transformareBinarZecimal(x)-2),2)- transformareBinarZecimal(x)* cos(2*transformareBinarZecimal(x))
+    return transformareBinarZecimal(x) <= 500, f
+
+x=[1,1,1,1,0,1,1,1,1]
+flag, fitness= f_obiectiv(x)
+print(flag)
+print(fitness)
+
+def gen_pop(dim,n):
+    pop=[]
+    for i in range(dim):
+        flag= False
+        while flag==False:
+            x=numpy.random.randint(0,2,n)
+            flag,fitness= f_obiectiv(x)
+
+        x=list(x)
+        x=x + [fitness]
+        pop = pop+ [x]
+
+    return pop
+
+pop= gen_pop(10, 9)
+print(numpy.asarray(pop))
+
+def turneu(pop_initiala, dim, n, k):
+    parinti = pop_initiala.copy()
+    fitnessuri = numpy.zeros(dim)
+    for i in range(dim):
+        fitnessuri[i] = pop_initiala[i][n]
+    for i in range(dim):
+        submultimePozitiiIndivizi = numpy.random.randint(0, dim, k)
+        fitnessuriIndiviziSelectati = [fitnessuri[submultimePozitiiIndivizi[i]] for i in range(k)]
+        fitnessIndividCastigator = max(fitnessuriIndiviziSelectati)
+        pozMax = numpy.where(fitnessuriIndiviziSelectati == fitnessIndividCastigator)
+        indexPozMax = pozMax[0][0]
+        # index = corespondentul lui indexPozMax in pop_initiala
+        index = submultimePozitiiIndivizi[indexPozMax]
+        parinti[i][0:n] = pop_initiala[index][0:n]
+        parinti[i][n] = fitnessuri[index]
+    return parinti
+
+pop_initiala = gen_pop(10,9)
+parinti=turneu(pop_initiala, 10, 9, 3)
+print(numpy.asarray(pop_initiala))
+print(numpy.asarray(parinti))
+def graytobin(x):
+    ret=0
+    while(x>0):
+        ret^=x
+        x>>1
+    return ret
